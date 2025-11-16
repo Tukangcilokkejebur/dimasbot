@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!-- Sambutan awal -->
+<category>
+  <pattern>HALO</pattern>
+  <template>
+    <random>
+      <li>Halo! Selamat datang di PT Panca Trans Wisata. Kami adalah penyedia jasa rental mobil dengan supir profesional. Ada yang bisa saya bantu?</li>
+      <li>Hai! Terima kasih telah menghubungi PT Panca Trans Wisata. Kami siap melayani kebutuhan sewa mobil Anda dengan driver berpengalaman. Silakan tanyakan!</li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern>HAI</pattern>
+  <template><srai>HALO</srai></template>
+</category>
+
+<category>
+  <pattern>HI</pattern>
+  <template><srai>HALO</srai></template>
+</category>
+
+<!-- Pertanyaan 1: Tentang Perusahaan -->
+<category>
+  <pattern>TENTANG PT PANCA TRANS WISATA</pattern>
+  <template>
+    PT Panca Trans Wisata adalah perusahaan penyedia jasa rental mobil dengan supir yang telah berpengalaman sejak 2008.
+    
+    🚗 SPESIALISASI KAMI:
+    - Sewa mobil dengan supir profesional
+    - Armada lengkap dan terawat
+    - Supir berpengalaman dan ramah
+    - Pelayanan 24 jam
+    - Area layanan seluruh Indonesia
+    
+    💼 MELAYANI:
+    ✅ Antar jemput bandara
+    ✅ City tour &amp; wisata
+    ✅ Keperluan bisnis
+    ✅ Perjalanan keluarga
+    ✅ Event &amp; gathering perusahaan
+    ✅ Wedding car
+    
+    Kami berkomitmen memberikan pelayanan transportasi terbaik dengan harga kompetitif!
+  </template>
+</category>
+
+<category>
+  <pattern>PROFIL PERUSAHAAN</pattern>
+  <template><srai>TENTANG PT PANCA TRANS WISATA</srai></template>
+</category>
+
+<category>
+  <pattern>APA ITU PT PANCA TRANS WISATA</pattern>
+  <template><srai>TENTANG PT PANCA TRANS WISATA</srai></template>
+</category>
+
+<!-- Pertanyaan 2: Jenis Mobil yang Tersedia -->
+<category>
+  <pattern>JENIS MOBIL</pattern>
+  <template>
+    Armada PT Panca Trans Wisata:
+    
+    🚗 SEDAN (4 penumpang)
+    - Toyota Vios
+    - Honda City
+    - Toyota Camry
+    
+    🚙 MPV (5-7 penumpang)
+    - Toyota Avanza
+    - Daihatsu Xenia
+    - Toyota Innova
+    - Honda Mobilio
+    
+    🚐 SUV (7 penumpang)
+    - Toyota Fortuner
+    - Pajero Sport
+    - Honda CR-V
+    
+    🏆 PREMIUM (5-7 penumpang)
+    - Toyota Alphard
+    - Vellfire
+    - Nissan Elgrand
+    
+    🚐 MINIBUS (10-14 penumpang)
+    - Toyota Hiace
+    - Isuzu Elf
+    
+    🚌 BUS (20-50 penumpang)
+    - Medium Bus (25-30 seat)
+    - Big Bus (35-50 seat)
+    
+    Semua armada dalam kondisi prima, ber-AC, dan asuransi lengkap!
+  </template>
+</category>
+
+<category>
+  <pattern>MOBIL APA SAJA</pattern>
+  <template><srai>JENIS MOBIL</srai></template>
+</category>
+
+<category>
+  <pattern>ARMADA</pattern>
+  <template><srai>JENIS MOBIL</srai></template>
+</category>
+
+<!-- Pertanyaan 3: Harga Sewa Mobil Dalam Kota -->
+<category>
+  <pattern>HARGA DALAM KOTA</pattern>
+  <template>
+    Harga Sewa Mobil Dalam Kota (12 jam):
+    
+    🚗 SEDAN
+    - Toyota Vios: Rp 500.000/hari
+    - Honda City: Rp 550.000/hari
+    - Toyota Camry: Rp 800.000/hari
+    
+    🚙 MPV
+    - Avanza/Xenia: Rp 450.000/hari
+    - Honda Mobilio: Rp 500.000/hari
+    - Toyota Innova: Rp 600.000/hari
+    
+    🚐 SUV
+    - Fortuner: Rp 900.000/hari
+    - Pajero Sport: Rp 950.000/hari
+    - Honda CR-V: Rp 850.000/hari
+    
+    🏆 PREMIUM
+    - Toyota Alphard: Rp 1.500.000/hari
+    - Vellfire: Rp 1.600.000/hari
+    
+    🚐 MINIBUS
+    - Toyota Hiace: Rp 1.200.000/hari
+    - Isuzu Elf: Rp 1.300.000/hari
+    
+    🚌 BUS
+    - Medium Bus: Rp 2.000.000/hari
+    - Big Bus: Rp 2.800.000/hari
+    
+    ✅ SUDAH TERMASUK: Supir, BBM dalam kota
+    ❌ BELUM TERMASUK: Parkir, tol, overtime
+    
+    *Overtime Rp 50.000/jam
+  </template>
+</category>
+
+<category>
+  <pattern>TARIF DALAM KOTA</pattern>
+  <template><srai>HARGA DALAM KOTA</srai></template>
+</category>
+
+<category>
+  <pattern>HARGA SEWA</pattern>
+  <template><srai>HARGA DALAM KOTA</srai></template>
+</category>
+
+<!-- Pertanyaan 4: Harga Sewa Mobil Luar Kota -->
+<category>
+  <pattern>HARGA LUAR KOTA</pattern>
+  <template>
+    Harga Sewa Mobil Luar Kota (Fullday):
+    
+    🚗 SEDAN
+    - Toyota Vios: Rp 700.000/hari
+    - Honda City: Rp 750.000/hari
+    - Toyota Camry: Rp 1.100.000/hari
+    
+    🚙 MPV
+    - Avanza/Xenia: Rp 650.000/hari
+    - Honda Mobilio: Rp 700.000/hari
+    - Toyota Innova: Rp 850.000/hari
+    
+    🚐 SUV
+    - Fortuner: Rp 1.300.000/hari
+    - Pajero Sport: Rp 1.350.000/hari
+    - Honda CR-V: Rp 1.200.000/hari
+    
+    🏆 PREMIUM
+    - Toyota Alphard: Rp 2.200.000/hari
+    - Vellfire: Rp 2.300.000/hari
+    
+    🚐 MINIBUS
+    - Toyota Hiace: Rp 1.800.000/hari
+    - Isuzu Elf: Rp 1.900.000/hari
+    
+    🚌 BUS
+    - Medium Bus: Rp 3.000.000/hari
+    - Big Bus: Rp 4.000.000/hari
+    
+    ✅ SUDAH TERMASUK: Supir, BBM, uang makan driver
+    ❌ BELUM TERMASUK: Parkir, tol, penginapan driver
+    
+    📍 DESTINASI POPULER:
+    - Jakarta - Bandung
+    - Jakarta - Puncak
+    - Jakarta - Yogyakarta
+    - Jakarta - Surabaya
+  </template>
+</category>
+
+<category>
+  <pattern>TARIF LUAR KOTA</pattern>
+  <template><srai>HARGA LUAR KOTA</srai></template>
+</category>
+
+<!-- Pertanyaan 5: Antar Jemput Bandara -->
+<category>
+  <pattern>ANTAR JEMPUT BANDARA</pattern>
+  <template>
+    Layanan Antar Jemput Bandara:
+    
+    ✈️ BANDARA SOEKARNO-HATTA:
+    
+    🚗 SEDAN
+    - Jakarta Pusat: Rp 300.000
+    - Jakarta Selatan: Rp 350.000
+    - Jakarta Timur: Rp 400.000
+    - Bekasi: Rp 450.000
+    
+    🚙 AVANZA/INNOVA
+    - Jakarta Pusat: Rp 350.000
+    - Jakarta Selatan: Rp 400.000
+    - Jakarta Timur: Rp 450.000
+    - Bekasi: Rp 500.000
+    
+    🏆 ALPHARD
+    - Jakarta Pusat: Rp 700.000
+    - Jakarta Selatan: Rp 750.000
+    - Jakarta Timur: Rp 800.000
+    - Bekasi: Rp 900.000
+    
+    🚐 HIACE (10-14 orang)
+    - Jakarta: Rp 800.000
+    - Bekasi: Rp 900.000
+    
+    ✅ SUDAH TERMASUK:
+    - Supir profesional
+    - BBM
+    - Parkir bandara
+    - Tol
+    - Meet &amp; greet di terminal
+    
+    ⏰ LAYANAN 24 JAM
+    📱 Booking minimal 3 jam sebelum penjemputan
+  </template>
+</category>
+
+<category>
+  <pattern>SEWA MOBIL BANDARA</pattern>
+  <template><srai>ANTAR JEMPUT BANDARA</srai></template>
+</category>
+
+<category>
+  <pattern>JEMPUT BANDARA</pattern>
+  <template><srai>ANTAR JEMPUT BANDARA</srai></template>
+</category>
+
+<!-- Pertanyaan 6: Paket Wisata -->
+<category>
+  <pattern>PAKET WISATA</pattern>
+  <template>
+    Paket Sewa Mobil untuk Wisata:
+    
+    🏖️ PAKET PUNCAK (12 jam)
+    Avanza + Driver: Rp 650.000
+    Innova + Driver: Rp 750.000
+    Destinasi: Taman Safari, Kebun Teh, Little Venice
+    
+    🏙️ PAKET BANDUNG (2 hari 1 malam)
+    Avanza + Driver: Rp 1.400.000
+    Innova + Driver: Rp 1.800.000
+    Destinasi: Tangkuban Perahu, Kawah Putih, Braga
+    
+    🌋 PAKET YOGYAKARTA (3 hari 2 malam)
+    Avanza + Driver: Rp 2.200.000
+    Innova + Driver: Rp 2.800.000
+    Destinasi: Borobudur, Prambanan, Malioboro
+    
+    🏝️ PAKET BALI (5 hari 4 malam)
+    Avanza + Driver: Rp 4.000.000
+    Innova + Driver: Rp 5.000.000
+    Destinasi: Uluwatu, Tanah Lot, Ubud, Kintamani
+    
+    ✅ INCLUDE:
+    - Mobil + supir
+    - BBM
+    - Parkir wisata
+    - Uang makan driver
+    
+    ❌ EXCLUDE:
+    - Hotel/penginapan
+    - Tiket masuk wisata
+    - Makan penumpang
+    
+    *Itinerary dapat disesuaikan
+  </template>
+</category>
+
+<category>
+  <pattern>SEWA MOBIL WISATA</pattern>
+  <template><srai>PAKET WISATA</srai></template>
+</category>
+
+<!-- Pertanyaan 7: Sewa Bulanan -->
+<category>
+  <pattern>SEWA BULANAN</pattern>
+  <template>
+    Paket Sewa Mobil Bulanan (30 hari):
+    
+    🚗 SEDAN
+    - Toyota Vios: Rp 12.000.000/bulan
+    - Honda City: Rp 13.000.000/bulan
+    
+    🚙 MPV
+    - Avanza/Xenia: Rp 11.000.000/bulan
+    - Honda Mobilio: Rp 12.000.000/bulan
+    - Toyota Innova: Rp 14.000.000/bulan
+    
+    🚐 SUV
+    - Fortuner: Rp 22.000.000/bulan
+    - Pajero Sport: Rp 23.000.000/bulan
+    
+    🏆 PREMIUM
+    - Toyota Alphard: Rp 35.000.000/bulan
+    - Vellfire: Rp 38.000.000/bulan
+    
+    ✅ SUDAH TERMASUK:
+    - Supir dedicated (1 orang)
+    - BBM dalam kota
+    - Service &amp; maintenance rutin
+    - Ganti oli
+    - Asuransi all risk
+    
+    ❌ BELUM TERMASUK:
+    - BBM luar kota
+    - Overtime (di atas 12 jam/hari)
+    - Parkir &amp; tol
+    
+    💼 COCOK UNTUK:
+    - Karyawan perusahaan
+    - Eksekutif
+    - Kebutuhan operasional kantor
+    
+    🎁 BENEFIT:
+    - Hemat hingga 30% dari harga harian
+    - 1 hari libur untuk maintenance
+    - Penggantian mobil jika ada masalah
+  </template>
+</category>
+
+<category>
+  <pattern>HARGA BULANAN</pattern>
+  <template><srai>SEWA BULANAN</srai></template>
+</category>
+
+<category>
+  <pattern>TARIF BULANAN</pattern>
+  <template><srai>SEWA BULANAN</srai></template>
+</category>
+
+<!-- Pertanyaan 8: Wedding Car -->
+<category>
+  <pattern>WEDDING CAR</pattern>
+  <template>
+    Layanan Wedding Car PT Panca Trans Wisata:
+    
+    💒 PAKET MOBIL PENGANTIN:
+    
+    🏆 ALPHARD (Mobil Pengantin)
+    - Half Day (6 jam): Rp 2.500.000
+    - Full Day (12 jam): Rp 3.500.000
+    - Dekorasi: Bunga + pita + boneka
+    
+    🎩 CAMRY (Mobil Pengantin)
+    - Half Day (6 jam): Rp 1.500.000
+    - Full Day (12 jam): Rp 2.200.000
+    - Dekorasi: Bunga + pita
+    
+    👥 MOBIL KELUARGA/TAMU:
+    - Avanza: Rp 600.000 (12 jam)
+    - Innova: Rp 800.000 (12 jam)
+    - Hiace: Rp 1.500.000 (12 jam)
+    
+    🚐 PAKET ROMBONGAN:
+    Sewa 5 mobil, dapat diskon 10%
+    Sewa 10 mobil, dapat diskon 15%
+    
+    ✅ INCLUDE:
+    - Supir profesional (seragam rapi)
+    - Dekorasi mobil pengantin
+    - BBM
+    - Parkir
+    - Cuci mobil
+    
+    📸 BONUS:
+    - Free dokumentasi mobil pengantin
+    - Mobil cadangan standby
+    
+    📅 Booking minimal 2 minggu sebelum acara!
+  </template>
+</category>
+
+<category>
+  <pattern>SEWA MOBIL WEDDING</pattern>
+  <template><srai>WEDDING CAR</srai></template>
+</category>
+
+<category>
+  <pattern>MOBIL PERNIKAHAN</pattern>
+  <template><srai>WEDDING CAR</srai></template>
+</category>
+
+<!-- Pertanyaan 9: Cara Booking -->
+<category>
+  <pattern>CARA BOOKING</pattern>
+  <template>
+    Cara Booking di PT Panca Trans Wisata:
+    
+    📱 VIA WHATSAPP (Tercepat):
+    1. Hubungi: 0812-3456-7890
+    2. Informasikan:
+       - Jenis mobil yang diinginkan
+       - Tanggal &amp; waktu pemakaian
+       - Tujuan/rute perjalanan
+       - Jumlah penumpang
+    3. Tim kami akan konfirmasi ketersediaan
+    4. Transfer DP 30% untuk konfirmasi
+    5. Mobil &amp; supir datang sesuai jadwal
+    
+    📞 VIA TELEPON:
+    Call Center: 021-12345678 (24 jam)
+    
+    🌐 VIA WEBSITE:
+    www.pancatranswisata.com
+    - Isi form booking online
+    - Pilih mobil &amp; tanggal
+    - Upload KTP
+    - Bayar DP via transfer
+    
+    🏢 DATANG LANGSUNG:
+    Alamat: Jl. Gatot Subroto No. 45
+    Jakarta Selatan 12190
+    Senin-Sabtu: 08.00-17.00 WIB
+    
+    ⚠️ BOOKING MINIMAL:
+    - Dalam kota: 3 jam sebelumnya
+    - Luar kota: 1 hari sebelumnya
+    - Wedding/Event: 2 minggu sebelumnya
+    - Sewa bulanan: 3 hari sebelumnya
+  </template>
+</category>
+
+<category>
+  <pattern>CARA PESAN</pattern>
+  <template><srai>CARA BOOKING</srai></template>
+</category>
+
+<category>
+  <pattern>CARA SEWA</pattern>
+  <template><srai>CARA BOOKING</srai></template>
+</category>
+
+<!-- Pertanyaan 10: Metode Pembayaran -->
+<category>
+  <pattern>METODE PEMBAYARAN</pattern>
+  <template>
+    Metode Pembayaran PT Panca Trans Wisata:
+    
+    💳 TRANSFER BANK:
+    - BCA: 5551234567 (PT Panca Trans Wisata)
+    - Mandiri: 1357890246
+    - BRI: 0246813579
+    
+    💰 E-WALLET:
+    - GoPay: 0812-3456-7890
+    - OVO: 0812-3456-7890
+    - Dana: 0812-3456-7890
+    
+    💵 TUNAI:
+    - Bayar langsung ke supir (untuk harian)
+    - Bayar di kantor
+    
+    💳 KARTU KREDIT:
+    - Visa
+    - MasterCard
+    - Cicilan 0% untuk 3-6 bulan
+    
+    📋 KETENTUAN:
+    
+    🔸 HARIAN/LUAR KOTA:
+    - DP 30% untuk konfirmasi booking
+    - Pelunasan saat mobil tiba/sebelum berangkat
+    
+    🔸 BULANAN:
+    - Pembayaran di awal bulan
+    - Dapat dicicil 2x (50%-50%)
+    
+    🔸 WEDDING/EVENT:
+    - DP 50% saat booking
+    - Pelunasan H-3 sebelum acara
+    
+    ✅ Bukti transfer wajib dikirim via WA untuk konfirmasi
+  </template>
+</category>
+
+<category>
+  <pattern>CARA BAYAR</pattern>
+  <template><srai>METODE PEMBAYARAN</srai></template>
+</category>
+
+<category>
+  <pattern>PEMBAYARAN</pattern>
+  <template><srai>METODE PEMBAYARAN</srai></template>
+</category>
+
+<!-- Pertanyaan 11: Syarat dan Ketentuan -->
+<category>
+  <pattern>SYARAT DAN KETENTUAN</pattern>
+  <template>
+    Syarat &amp; Ketentuan PT Panca Trans Wisata:
+    
+    📋 DOKUMEN YANG DIPERLUKAN:
+    - Fotocopy KTP penyewa
+    - Nomor telepon aktif
+    - Alamat lengkap (untuk sewa bulanan)
+    
+    ⏰ WAKTU PEMAKAIAN:
+    - Dalam kota: 12 jam (08.00-20.00)
+    - Luar kota: 24 jam/hari
+    - Overtime: Rp 50.000/jam
+    
+    ⛽ BBM:
+    - Dalam kota: ditanggung kami
+    - Luar kota: ditanggung kami
+    - Overtime luar kota: ditanggung penyewa
+    
+    🚗 KONDISI MOBIL:
+    - Pengembalian dalam kondisi bersih
+    - Kerusakan akibat kelalaian penyewa wajib diganti
+    - Interior tidak boleh kotor berat
+    
+    🚫 LARANGAN:
+    - Merokok dalam mobil
+    - Membawa binatang (kecuali seizin)
+    - Menggunakan mobil untuk kejahatan
+    - Membawa barang berbahaya
+    
+    👨‍✈️ SUPIR:
+    - Berpengalaman minimal 5 tahun
+    - Berseragam rapi
+    - Ramah &amp; profesional
+    - Mengerti rute &amp; area wisata
+    - Tidak boleh diganti atau dipindahtangankan
+    
+    📱 Hubungi kami untuk info lebih detail!
+  </template>
+</category>
+
+<category>
+  <pattern>KETENTUAN</pattern>
+  <template><srai>SYARAT DAN KETENTUAN</srai></template>
+</category>
+
+<category>
+  <pattern>ATURAN</pattern>
+  <template><srai>SYARAT DAN KETENTUAN</srai></template>
+</category>
+
+<!-- Pertanyaan 12: Area Layanan -->
+<category>
+  <pattern>AREA LAYANAN</pattern>
+  <template>
+    Area Layanan PT Panca Trans Wisata:
+    
+    🏙️ JABODETABEK (Full Service):
+    ✅ Jakarta (semua wilayah)
+    ✅ Bogor
+    ✅ Depok
+    ✅ Tangerang
+    ✅ Bekasi
+    
+    🗺️ JAWA BARAT:
+    ✅ Bandung
+    ✅ Puncak
+    ✅ Cianjur
+    ✅ Sukabumi
+    ✅ Cirebon
+    ✅ Tasikmalaya
+    
+    🗺️ JAWA TENGAH:
+    ✅ Semarang
+    ✅ Solo
+    ✅ Yogyakarta
+    ✅ Magelang
+    ✅ Purwokerto
+    
+    🗺️ JAWA TIMUR:
+    ✅ Surabaya
+    ✅ Malang
+    ✅ Banyuwangi
+    ✅ Bromo
+    
+    🗺️ BALI:
+    ✅ Denpasar
+    ✅ Ubud
+    ✅ Kuta
+    ✅ Seminyak
+    ✅ Nusa Dua
+    
+    🗺️ LUAR JAWA (Koordinasi):
+    📞 Hubungi kami untuk layanan ke luar Jawa
+    
+    ⚠️ Untuk destinasi jauh, ada tambahan biaya akomodasi supir
+  </template>
+</category>
+
+<category>
+  <pattern>WILAYAH LAYANAN</pattern>
+  <template><srai>AREA LAYANAN</srai></template>
+</category>
+
+<category>
+  <pattern>COVERAGE AREA</pattern>
+  <template><srai>AREA LAYANAN</srai></template>
+</category>
+
+<!-- Pertanyaan 13: Keunggulan -->
+<category>
+  <pattern>KEUNGGULAN</pattern>
+  <template>
+    Keunggulan PT Panca Trans Wisata:
+    
+    ✨ ARMADA BERKUALITAS:
+    ✅ Mobil terawat &amp; bersih
+    ✅ Tahun produksi 2018 ke atas
+    ✅ AC dingin &amp; nyaman
+    ✅ Sound system berkualitas
+    ✅ GPS tracking
+    
+    👨‍✈️ SUPIR PROFESIONAL:
+    ✅ Berpengalaman 5+ tahun
+    ✅ Menguasai rute
+    ✅ Ramah &amp; sopan
+    ✅ Berseragam rapi
+    ✅ Tidak merokok
+    ✅ SIM A lengkap
+    
+    💰 HARGA KOMPETITIF:
+    ✅ Tarif transparan
+    ✅ Tanpa biaya tersembunyi
+    ✅ Diskon untuk sewa panjang
+    ✅ Paket hemat untuk group
+    
+    🛡️ JAMINAN KEAMANAN:
+    ✅ Asuransi all risk
+    ✅ Unit cadangan standby
+    ✅ Support 24/7
+    ✅ Garansi uang kembali jika mobil bermasalah
+    
+    ⚡ PELAYANAN CEPAT:
+    ✅ Respon booking maksimal 30 menit
+    ✅ Mobil tepat waktu
+    ✅ Proses mudah &amp; cepat
+    
+    🎁 BONUS:
+    ✅ Air mineral gratis
+    ✅ Tisu &amp; hand sanitizer
+    ✅ Charger HP
+    ✅ Free wifi (unit tertentu)
+    
+    Kepuasan Anda prioritas kami!
+  </template>
+</category>
+
+<category>
+  <pattern>KELEBIHAN</pattern>
+  <template><srai>KEUNGGULAN</srai></template>
+</category>
+
+<category>
+  <pattern>MENGAPA PILIH</pattern>
+  <template><srai>KEUNGGULAN</srai></template>
+</category>
+
+<!-- Pertanyaan 14: Kontak -->
+<category>
+  <pattern>KONTAK</pattern>
+  <template>
+    Hubungi PT Panca Trans Wisata:
+    
+    🏢 KANTOR PUSAT:
+    Jl. Gatot Subroto No. 45
+    Jakarta Selatan 12190
+    
+    📞 TELEPON:
+    Call Center: 021-12345678 (24 jam)
+    Office: 021-87654321
+    
+    📱 WHATSAPP:
+    Admin Booking: 0812-3456-7890
+    Customer Service: 0813-4567-8901
+    
+    📧 EMAIL:
+    booking@pancatranswisata.com
+    info@pancatranswisata.com
+    
+    🌐 WEBSITE:
+    www.pancatranswisata.com
+    
+    📱 SOCIAL MEDIA:
+    Instagram: @pancatranswisata
+    Facebook: PT Panca Trans Wisata
+    TikTok: @pancatranswisata
+    
+    🕐 JAM OPERASIONAL KANTOR:
+    Senin-Jumat: 08.00-17.00 WIB
+    Sabtu: 08.00-15.00 WIB
+    Minggu: Libur
+    
+    ⚠️ Layanan booking &amp; customer service 24 jam via WhatsApp!
+  </template>
+</category>
+
+<category>
+  <pattern>ALAMAT</pattern>
+  <template><srai>KONTAK</srai></template>
+</category>
+
+<category>
+  <pattern>NOMOR TELEPON</pattern>
+  <template><srai>KONTAK</srai></template>
+</category>
+
+<!-- Pertanyaan 15: FAQ -->
+<category>
+  <pattern>FAQ</pattern>
+  <template>
+    ❓ Pertanyaan yang Sering Diajukan (FAQ):
+    
+    Q: Apakah bisa sewa mobil tanpa supir?
+    A: Maaf, kami hanya melayani sewa mobil DENGAN supir untuk keamanan dan kenyamanan Anda.
+    
+    Q: Berapa minimal durasi sewa?
+    A: Minimal 12 jam untuk dalam kota, 24 jam untuk luar kota.
+    
+    Q: Apakah supir menginap jika sewa luar kota?
+    A: Ya, untuk perjalanan luar kota, penyewa menyediakan penginapan untuk supir.
+    
+    Q: Bagaimana jika mobil mogok di tengah jalan?
+    A: Kami kirimkan unit pengganti atau teknisi, tanpa biaya tambahan.
+    
+    Q: Apakah bisa ganti supir di tengah perjalanan?
+    A: Bisa, dengan koordinasi ke kantor kami terlebih dahulu.
+    
+    Q: Berapa kapasitas bagasi?
+    A: Tergantung jenis mobil. Avanza 2-3 koper besar, Innova 3-4 koper, Alphard 4-5 koper.
+    
+    Q: Apakah ada biaya tambahan untuk hari libur?
+    A: Tidak ada biaya tambahan, tarif tetap sama.
+    
+    Q: Bagaimana jika terlambat mengembalikan mobil?
+    A: Dikenakan biaya overtime Rp 50.000/jam.
+    
+    Q: Apakah supir membantu angkat barang?
+    A: Ya, supir kami siap membantu angkat bagasi ringan.
+    
+    Q: Apakah bisa request supir yang sama?
+    A: Bisa, informasikan saat booking (tergantung availability).
+    
+    Masih ada pertanyaan? Hubungi CS kami!
+  </template>
+</category>
+
+<category>
+  <pattern>PERTANYAAN UMUM</pattern>
+  <template><srai>FAQ</srai></template>
+</category>
+
+<!-- Promo dan Diskon -->
+<category>
+  <pattern>PROMO</pattern>
+  <template>
+    🎉 PROMO PT Panca Trans Wisata:
+    
+    ⚡ PROMO BULAN INI:
+    
+    🎊 DISKON 20% SEWA PERTAMA
+    Untuk pelanggan baru!
+    Kode: NEWCUST20
+    
+    💰 PAKET HEMAT BULANAN
+    Sewa 1 bulan dapat free 2 hari
+    Hemat sampai Rp 1.500.000!
+    
+    👥 DISKON GROUP:
+    - Sewa 3 mobil: diskon 10%
+    - Sewa 5 mobil: diskon 15%
+    - Sewa 10 mobil: diskon 20%
+    
+    🎯 PAKET WISATA SPESIAL:
+    Bandung 2D1N: Rp 1.400.000 → Rp 1.200.000
+    Yogyakarta 3D2N: Rp 2.200.000 → Rp 1.900.000
+    
+    💳 PROMO KARTU KREDIT:
+    Cicilan 0% untuk 3-6 bulan
+    Bank: BCA, Mandiri, BNI, BRI
+    
+    🎁 BONUS:
+    - Free upgrade mobil (tergantung availability)
+    - Free air mineral &amp; snack
+    - Free dekorasi untuk wedding car
+    
+    📅 EARLY BIRD:
+    Booking 7 hari sebelumnya, diskon 5%
+    Booking 14 hari sebelumnya, diskon 10%
+    
+    ⏰ Promo terbatas! Hubungi sekarang!
+  </template>
+</category>
+
+<category>
+  <pattern>DISKON</pattern>
+  <template><srai>PROMO</srai></template>
+</category>
+
+<category>
+  <pattern>ADA PROMO</pattern>
+  <template><srai>PROMO</srai></template>
+</category>
+
+<!-- Kebijakan Pembatalan -->
+<category>
+  <pattern>KEBIJAKAN PEMBATALAN</pattern>
+  <template>
+    Kebijakan Pembatalan PT Panca Trans Wisata:
+    
+    ❌ PEMBATALAN (CANCEL):
+    
+    📅 7 hari atau lebih sebelum pemakaian:
+    - DP dikembalikan 100%
+    - Gratis reschedule
+    
+    📅 3-6 hari sebelum pemakaian:
+    - DP dikembalikan 50%
+    - Atau bisa reschedule (admin Rp 100.000)
+    
+    📅 1-2 hari sebelum pemakaian:
+    - DP hangus 100%
+    - Reschedule dikenakan biaya 25%
+    
+    📅 Hari H atau No Show:
+    - DP hangus 100%
+    - Tidak ada refund
+    
+    🔄 RESCHEDULE (GANTI JADWAL):
+    
+    ✅ Gratis: 7 hari sebelum pemakaian
+    💰 Rp 100.000: 3-6 hari sebelum
+    💰 25% dari total: 1-2 hari sebelum
+    ❌ Tidak bisa: Hari H
+    
+    ⛈️ FORCE MAJEURE:
+    Full refund atau reschedule gratis untuk:
+    - Bencana alam
+    - Kerusuhan
+    - Pandemi/lockdown
+    - Kebijakan pemerintah
+    
+    📝 KETENTUAN:
+    - Pembatalan via WhatsApp resmi
+    - Refund diproses 3-7 hari kerja
+    - Bukti transfer wajib disimpan
+    
+    📞 Hubungi CS untuk proses pembatalan
+  </template>
+</category>
+
+<category>
+  <pattern>CANCEL BOOKING</pattern>
+  <template><srai>KEBIJAKAN PEMBATALAN</srai></template>
+</category>
+
+<category>
+  <pattern>REFUND</pattern>
+  <template><srai>KEBIJAKAN PEMBATALAN</srai></template>
+</category>
+
+<!-- Daftar Bantuan -->
+<category>
+  <pattern>BANTUAN</pattern>
+  <template>
+    📋 Topik yang bisa saya bantu:
+    
+    1️⃣ Tentang PT Panca Trans Wisata - profil perusahaan
+    2️⃣ Jenis mobil - armada yang tersedia
+    3️⃣ Harga dalam kota - tarif 12 jam
+    4️⃣ Harga luar kota - tarif fullday
+    5️⃣ Antar jemput bandara - layanan airport transfer
+    6️⃣ Paket wisata - sewa mobil + itinerary
+    7️⃣ Sewa bulanan - paket 30 hari
+    8️⃣ Wedding car - mobil pengantin
+    9️⃣ Cara booking - prosedur pemesanan
+    🔟 Metode pembayaran - cara bayar
+    1️⃣1️⃣ Syarat dan ketentuan - aturan sewa
+    1️⃣2️⃣ Area layanan - wilayah operasional
+    1️⃣3️⃣ Keunggulan - mengapa pilih kami
+    1️⃣4️⃣ Kontak - alamat dan telepon
+    1️⃣5️⃣ FAQ - pertanyaan umum
+    
+    BONUS:
+    🎁 Promo - diskon dan penawaran
+    ❌ Kebijakan pembatalan - cancel &amp; refund
+    
+    Ketik topik yang ingin Anda tanyakan!
+    Contoh: "jenis mobil", "harga dalam kota", "promo"
+  </template>
+</category>
+
+<category>
+  <pattern>HELP</pattern>
+  <template><srai>BANTUAN</srai></template>
+</category>
+
+<category>
+  <pattern>MENU</pattern>
+  <template><srai>BANTUAN</srai></template>
+</category>
+
+<category>
+  <pattern>APA YANG BISA KAMU LAKUKAN</pattern>
+  <template><srai>BANTUAN</srai></template>
+</category>
+
+<!-- Pertanyaan tentang bot -->
+<category>
+  <pattern>SIAPA KAMU</pattern>
+  <template>
+    Saya adalah Asisten Virtual PT Panca Trans Wisata. Saya diciptakan untuk membantu Anda mendapatkan informasi tentang layanan rental mobil dengan supir, harga, booking, dan pertanyaan umum lainnya. Saya siap melayani 24/7! 🚗
+  </template>
+</category>
+
+<!-- Testimoni -->
+<category>
+  <pattern>TESTIMONI</pattern>
+  <template>
+    ⭐ Testimoni Pelanggan PT Panca Trans Wisata:
+    
+    ⭐⭐⭐⭐⭐ "Supirnya ramah dan profesional. Mobilnya bersih dan nyaman. Recommended!" - Ibu Sarah, Jakarta
+    
+    ⭐⭐⭐⭐⭐ "Sewa bulanan untuk kantor, pelayanan memuaskan. Mobilnya selalu on time." - PT Maju Jaya
+    
+    ⭐⭐⭐⭐⭐ "Pakai untuk wedding, mobil Alphard-nya mewah dan dekorasinya cantik!" - Andi &amp; Rina
+    
+    ⭐⭐⭐⭐⭐ "Tour ke Yogyakarta 3 hari, supirnya mengerti banget tempat wisata. Puas!" - Keluarga Budi
+    
+    ⭐⭐⭐⭐⭐ "Harga kompetitif, mobil bagus, pelayanan cepat. Bakal langganan!" - Pak Hendra
+    
+    💯 Rating 4.9/5.0 dari 2000+ pelanggan
+    🏆 Best Car Rental Service 2023
+    
+    Jadilah pelanggan kami selanjutnya!
+  </template>
+</category>
+
+<category>
+  <pattern>REVIEW</pattern>
+  <template><srai>TESTIMONI</srai></template>
+</category>
+
+<!-- Respon default -->
+<category>
+  <pattern>*</pattern>
+  <template>
+    Maaf, saya kurang memahami pertanyaan Anda. 
+    
+    Saya adalah bot PT Panca Trans Wisata yang melayani rental mobil dengan supir.
+    
+    Coba tanyakan:
+    - "jenis mobil" - lihat armada kami
+    - "harga dalam kota" - cek tarif
+    - "cara booking" - prosedur pesan
+    - "promo" - diskon terbaru
+    - "kontak" - hubungi kami
+    
+    Atau ketik "bantuan" untuk melihat semua topik! 🚗
+  </template>
+</category>
+
+<!-- Ucapan terima kasih -->
+<category>
+  <pattern>TERIMA KASIH</pattern>
+  <template>
+    <random>
+      <li>Sama-sama! Terima kasih telah memilih PT Panca Trans Wisata. Kami siap melayani kebutuhan transportasi Anda! 🚗</li>
+      <li>Terima kasih kembali! Jangan ragu untuk menghubungi kami kapan saja. Selamat berkendara! 🚙</li>
+      <li>Senang bisa membantu! Hubungi kami untuk booking dan nikmati perjalanan nyaman bersama supir profesional kami! ✨</li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern>MAKASIH</pattern>
+  <template><srai>TERIMA KASIH</srai></template>
+</category>
+
+<category>
+  <pattern>THANKS</pattern>
+  <template><srai>TERIMA KASIH</srai></template>
+</category>
+
+<category>
+  <pattern>THANK YOU</pattern>
+  <template><srai>TERIMA KASIH</srai></template>
+</category>
+
+<!-- Salam perpisahan -->
+<category>
+  <pattern>SAMPAI JUMPA</pattern>
+  <template>
+    Sampai jumpa! Terima kasih telah menghubungi PT Panca Trans Wisata. Kami tunggu booking Anda. Safe driving! 🚗👋
+  </template>
+</category>
+
+<category>
+  <pattern>BYE</pattern>
+  <template><srai>SAMPAI JUMPA</srai></template>
+</category>
+
+<category>
+  <pattern>SELAMAT TINGGAL</pattern>
+  <template><srai>SAMPAI JUMPA</srai></template>
+</category>
+
+<category>
+  <pattern>DADAH</pattern>
+  <template><srai>SAMPAI JUMPA</srai></template>
+</category>
+
+<category>
+    <pattern>hai</pattern>
+    <template>Halo! Selamat datang di PT Panca Trans Wisata. Kami adalah penyedia jasa rental mobil dengan supir profesional. Ada yang bisa saya bantu?</template>
+</category>
+<category>
+    <pattern>jenis mobil</pattern>
+    <template>Armada PT Panca Trans Wisata: 🚗 SEDAN (4 penumpang) - Toyota Vios - Honda City - Toyota Camry 🚙 MPV (5-7 penumpang) - Toyota Avanza - Daihatsu Xenia - Toyota Innova - Honda Mobilio 🚐 SUV (7 penumpang) - Toyota Fortuner - Pajero Sport - Honda CR-V 🏆 PREMIUM (5-7 penumpang) - Toyota Alphard - Vellfire - Nissan Elgrand 🚐 MINIBUS (10-14 penumpang) - Toyota Hiace - Isuzu Elf 🚌 BUS (20-50 penumpang) - Medium Bus (25-30 seat) - Big Bus (35-50 seat) Semua armada dalam kondisi prima, ber-AC, dan asuransi lengkap!</template>
+</category>
+</aiml>
